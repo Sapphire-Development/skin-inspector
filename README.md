@@ -1,46 +1,48 @@
-# Astro Starter Kit: Basics
+<h1 align="center">Skin Inspector</h1>
 
-```sh
-npm create astro@latest -- --template basics
-```
+<p align="center">
+A minimal web tool to view and download <strong>Minecraft skins</strong> with clean previews and accurate rendering.
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<p align="center">
+  <img src="https://img.shields.io/badge/Astro-000000?style=flat&logo=astro&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-000000?style=flat&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=flat&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-000000?style=flat" />
+</p>
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## Features
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- View Minecraft skins
+- Clean 2D and 3D previews
+- Download skins easily
+- Fast rendering using external APIs
+- Minimal and modern UI
+- No tracking, no ads
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## How it works
 
-## 🧞 Commands
+Skin Inspector fetches and renders Minecraft skins using public APIs such as:
 
-All commands are run from the root of the project, from a terminal:
+- Minotar
+- Mineatar
+- Other Minecraft skin rendering services
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+All rendering is handled with Astro and TypeScript for performance and maintainability.
 
-## 👀 Want to learn more?
+## Tech stack
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Astro
+- TypeScript
+- Tailwind CSS
+- External Minecraft skin APIs
+
+## Local development
+
+```bash
+git clone https://github.com/your-username/skin-inspector.git
+cd skin-inspector
+npm install
+npm run dev
