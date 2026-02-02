@@ -19,6 +19,7 @@ export const APIS: SkinApi[] = [
     { name: "Bust", provider: "McStats", type: "image", url: (uuid) => `https://skins.mcstats.com/bust/${uuid}` },
     { name: "Body Front", provider: "McStats", type: "image", url: (uuid) => `https://skins.mcstats.com/body/front/${uuid}` },
     { name: "Body Side", provider: "McStats", type: "image", url: (uuid) => `https://skins.mcstats.com/body/side/${uuid}` },
+    { name: "Body Back", provider: "McStats", type: "image", url: (uuid) => `https://skins.mcstats.com/body/back/${uuid}` },
 
     // NickAc (NMSR)
     { name: "Face", provider: "NMSR", type: "image", url: (uuid) => `https://nmsr.nickac.dev/face/${uuid}` },
