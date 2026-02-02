@@ -10,7 +10,7 @@ interface Skin3DViewerProps {
 export function Skin3DViewer({ skinUrl, onClose }: Skin3DViewerProps) {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const viewerRef = useRef<skinview3d.SkinViewer | null>(null);
-    const [isRotating, setIsRotating] = useState(true);
+    const [isRotating, setIsRotating] = useState(false);
 
     useEffect(() => {
         if (!canvasRef.current) return;
@@ -70,13 +70,13 @@ export function Skin3DViewer({ skinUrl, onClose }: Skin3DViewerProps) {
                         className="p-2 bg-zinc-800/50 hover:bg-zinc-800 text-zinc-400 hover:text-white rounded-full transition-colors backdrop-blur-md"
                         title={isRotating ? "Pause Rotation" : "Auto Rotate"}
                     >
-                        {isRotating ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+                        {isRotating ? <Pause className="w-5 h-5 fill-current" /> : <Play className="w-5 h-5 fill-current" />}
                     </button>
                     <button
                         onClick={onClose}
                         className="p-2 bg-zinc-800/50 hover:bg-red-500/20 text-zinc-400 hover:text-red-400 rounded-full transition-colors backdrop-blur-md"
                     >
-                        <X className="w-5 h-5" />
+                        <X className="w-5 h-5 fill-current" />
                     </button>
                 </div>
 

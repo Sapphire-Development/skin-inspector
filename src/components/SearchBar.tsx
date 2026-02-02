@@ -24,13 +24,13 @@ export function SearchBar({ username, setUsername, onSearch, loading, error, uui
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             placeholder="Enter username..."
-                            className="w-full bg-zinc-900/50 border border-zinc-800 text-sm text-white placeholder-zinc-500 rounded-lg pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-zinc-700/50 focus:border-zinc-700 transition-all font-medium"
+                            className="w-full h-12 bg-zinc-900/50 border border-zinc-800 text-sm text-white placeholder-zinc-500 rounded-lg pl-10 pr-4 outline-none focus:ring-2 focus:ring-zinc-700/50 focus:border-zinc-700 transition-all font-medium"
                         />
                     </div>
                     <button
                         type="submit"
                         disabled={loading}
-                        className="px-4 py-3 bg-zinc-100 text-zinc-950 rounded-lg font-medium text-sm hover:bg-white hover:shadow-lg hover:shadow-zinc-500/10 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                        className="h-12 px-4 bg-zinc-100 text-zinc-950 rounded-lg font-medium text-sm hover:bg-white hover:shadow-lg hover:shadow-zinc-500/10 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                     >
                         {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : "Search"}
                     </button>
@@ -38,18 +38,18 @@ export function SearchBar({ username, setUsername, onSearch, loading, error, uui
                         type="button"
                         onClick={onOpen3D}
                         disabled={!uuid}
-                        className="px-3 py-3 bg-zinc-900 border border-zinc-800 text-zinc-400 rounded-lg hover:text-white hover:border-zinc-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                        title="3D View"
+                        className="h-12 w-12 p-0 flex items-center justify-center bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 hover:shadow-[0_0_15px_rgba(79,70,229,0.4)] transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
+                        title="Open 3D Viewer"
                     >
-                        <Box className="w-4 h-4" />
+                        <Box className="w-5 h-5 fill-current" />
                     </button>
                     <button
                         type="button"
                         onClick={onShare}
-                        className="px-3 py-3 bg-zinc-900 border border-zinc-800 text-zinc-400 rounded-lg hover:text-white hover:border-zinc-700 transition-all"
+                        className="h-12 w-12 p-0 flex items-center justify-center bg-zinc-900 border border-zinc-800 text-zinc-400 rounded-lg hover:text-white hover:border-zinc-700 transition-all"
                         title="Share Link"
                     >
-                        <Share2 className="w-4 h-4" />
+                        <Share2 className="w-5 h-5" />
                     </button>
                 </div>
 
