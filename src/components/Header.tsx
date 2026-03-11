@@ -5,7 +5,7 @@ export function Header() {
         <div className="flex flex-col md:flex-row gap-8 items-start justify-between">
             <div className="space-y-4 max-w-lg">
                 <div className="flex items-center gap-2">
-                    <img src="/sapphirewhite.png" alt="Sapphire Logo" className="h-14 w-auto" />
+                    <img src="https://cdn.sapphi.dev/assets/sapphirewhite.webp" alt="Sapphire Logo" className="h-14 w-auto" />
                     <div className="h-8 w-[1px] bg-zinc-800 mx-2"></div>
                     <h1 className="text-4xl font-bold tracking-tight text-white">
                         Skin Inspector
